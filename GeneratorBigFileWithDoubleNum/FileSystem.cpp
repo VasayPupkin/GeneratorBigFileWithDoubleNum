@@ -19,6 +19,7 @@ bool FileSystem::createFile(const std::string &filePath)
             std::ofstream file(filePath);
             return true;
         } catch (...) {
+            std::cout << "File "<<filePath<<" not created!!!"<<std::endl;
             return false;
         }
     }

@@ -9,7 +9,7 @@ using namespace std;
 std::string unsortedFile = "unsorted";
 std::string sortedFile = "sorted";
 
-constexpr size_t strNumPerLoop = 1000;
+constexpr size_t strNumPerLoop = 10000;
 
 int main()
 {
@@ -26,6 +26,5 @@ int main()
     }
     ulong timeStop = time(NULL);
     FileSystem::writeToFile(unsortedFile, std::to_string(timeStop - timeStart));
-    cout << "Hello World!" << endl;
     return 0;
 }
