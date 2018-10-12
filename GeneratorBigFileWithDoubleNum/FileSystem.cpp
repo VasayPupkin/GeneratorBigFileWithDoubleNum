@@ -41,6 +41,6 @@ void FileSystem::writeToFile(const std::string &filePath, const std::string &con
 {
     std::ofstream myfile;
     myfile.open (filePath,std::ios_base::app);
-    myfile << content + "\n";
+    myfile << content;
     myfile.close();
 }

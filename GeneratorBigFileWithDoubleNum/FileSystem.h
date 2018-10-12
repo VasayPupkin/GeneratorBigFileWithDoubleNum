@@ -14,7 +14,7 @@ public:
     FileSystem() = delete;
 
     static bool checkFileExist(const std::string &filePath);
-    static bool createFile(const std::string &filePath );
+    static bool createFile(const std::string &filePath);
     static size_t getFileSize(const std::string &filePath);
     static void writeToFile(const std::string &filePath, const std::string &content);
 };
