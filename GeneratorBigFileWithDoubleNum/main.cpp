@@ -27,8 +27,8 @@ int main()
                 tmp = DoubleNumberGenerator::generateDoubleNumber();
                 tmpString += std::to_string(tmp) + "\n";
                 currentSize += tmpString.length();
+                myfile << tmpString;
             }
-            myfile << tmpString;
         }
         myfile.close();
     }
